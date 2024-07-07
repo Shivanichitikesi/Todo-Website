@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title%} Update-{% endblock title%}
+{% block body%}
+
+
+<div class="container mb-3">
+    <h2>Update Todo</h2>
+    <form action="/update/{{todo.sno}}" method="POST">
+        <div class="form-group">
+            <label for="title" name="title">Todo Title</label>
+            <input type="text" name="title" class="form-control" value="{{todo.Title}}" id="title">
+        </div>
+        <div class="form-group">
+            <label for="desc" name="desc">Todo Description</label>
+            <input type="text" name="desc" class="form-control" value="{{todo.desc}}" id="desc">
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </form>
+</div>
+{% endblock body %}

@@ -1,0 +1,22 @@
+/* styles.css */
+
+body {
+    background-color: #bcd7f1;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(120, 10, 238, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.btn-outline-primary {
+    margin-left: 10px;
+}
